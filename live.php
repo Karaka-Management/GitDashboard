@@ -6,7 +6,11 @@ if(!defined('ROOT_PATH')) {
 <section>
     <div>
         <div class="live-push">
-
+            <h2>Last commit</h2>
+            <?= $repositories[0]->getNewest()->getAuthor()->getName(); ?>
+            <?= $repositories[0]->getNewest()->getDate()->format('Y-m-d'); ?>
+            <?= $repositories[0]->getNewest()->getMessage(); ?>
+            <?= $repositories[0]->getNewest()->getFiles(); ?>
         </div>
     </div>
     <div>

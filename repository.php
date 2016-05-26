@@ -6,7 +6,7 @@ if(!defined('ROOT_PATH')) {
 <section>
     <?php foreach($repositories as $key => $repository) : ?>
         <div class="repository">
-            <h2><?= $repository->getDirectoryPath(); ?></h2>
+            <h2><?= $repository->getName(); ?></h2>
             <div>
                 <table>
                     <tbody>

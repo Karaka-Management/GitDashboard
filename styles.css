@@ -30,34 +30,70 @@ header {
     background: #2f2f2f;
     padding: 20px;
     color: #fff;
+
+    width: 100%;
+    height: 110px;
+    display: table;
 }
 
 header h1 {
     text-shadow: 2px 2px #000;
+    display: table-cell;
+    vertical-align: middle;
+    width: 1%;
+    white-space: nowrap;
+    padding-right: 200px;
+}
+
+header img {
+    float: left;
+}
+
+header table {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#logo {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100px;
+}
+
+#logo img {
+    margin-right: 20px;
 }
 
 @keyframes slidy {
     0% { left: 0; }
-    20% { left: 0; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
+    6% { left: 0; }
+    8% { left: -100%; }
+    21% { left: -100%; }
+    23% { left: -200%; }
+    36% { left: -200%; }
+    38% { left: -300%; }
+    51% { left: -300%; }
+    53% { left: -200%; }
+    66% { left: -200%; }
+    68% { left: -100%; }
+    82% { left: -100%; }
+    84% { left: 0; }
+    100% { left: 0; }
 }
 
 main > section {
-    width: 25%; float: left; display: inline-block;
+    width: 25%;
+    float: left;
+    display: inline-block;
 }
 
 section > div {
-    float: left;
     background: #fff;
     padding: 10px;
     margin: 10px;
     border: 1px solid #9d9d9d;
+    width: 20%;
+    display: inline-block;
 }
 
 h2 {
@@ -75,22 +111,25 @@ main {
     margin: 0;
     left: 0;
     text-align: left;
-    animation: 10s slidy infinite;
+    animation: 180s slidy infinite;
     overflow: hidden;
     padding: 0 10px 10px 10px;
 }
 
 td, th {
     text-align: left;
+    vertical-align: top;
+}
+
+header th {
+    padding-left: 30px;
 }
 
 .stats-loc {
-    width: 200px;
     height: 180px;
 }
 
 .stats-commits {
-    width: 400px;
     height: 180px;
 }
 
