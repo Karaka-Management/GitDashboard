@@ -40,7 +40,15 @@ Some features for the dashboard could be to include additional tools such as:
 
 However this is outside of the scope for now and not planned to implement in the near future.
 
-# External dependencies
+# Dependencies
+
+## Internal
+
+* phpOMS
+* jsOMS
+* cssOMS
+
+## External
 
 * d3js
 * font-awesome
@@ -53,4 +61,3 @@ The project is still under development :)
 ![Rankings](https://raw.githubusercontent.com/Orange-Management/GitDashboard/master/img/documentation/rankings.png)
 ![Repositories](https://raw.githubusercontent.com/Orange-Management/GitDashboard/master/img/documentation/repositories.png)
 ![Commits](https://raw.githubusercontent.com/Orange-Management/GitDashboard/master/img/documentation/commits.png)
-
