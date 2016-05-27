@@ -19,6 +19,8 @@ $contributors     = [];
 $branches         = [];
 $committerRanking = [];
 $tags             = [];
+$fileCount        = [];
+$loc              = [];
 $branchesCount    = 0;
 $tagsCount        = 0;
 
@@ -31,6 +33,8 @@ foreach ($CONFIG['repositories'] as $repository) {
     $contributors[$key] = $tRepo->getContributors($start);
     $commits[$key]      = array_sum($tRepo->getCommitsCount($start));
     $tags[$key]         = $tRepo->getTags();
+    $fileCount[$key]    = $tRepo->countFiles();
+    $loc[$key]          = $tRepo->getLOC();
 
     $branchesCount += count($branches[$key]);
     $tagsCount += count($tags[$key]);
