@@ -3,7 +3,7 @@
     <div id="logo">
         <img width="100px" src="img/template/logo.png">
     </div>
-    <h1>Git Dashboard</h1>
+    <h1>GitDashboard</h1>
     <table>
         <tbody>
         <tr><th><i class="fa fa-cubes"></i>Repositories<td><?= count($repositories); ?>

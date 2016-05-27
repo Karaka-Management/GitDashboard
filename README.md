@@ -49,8 +49,8 @@ However this is outside of the scope for now and not planned to implement in the
 
 The project is still under development :)
 
-![Statistics](https://github.com/Orange-Management/GitDashboard/img/documentation/stats.png)
-![Rankings](https://github.com/Orange-Management/GitDashboard/img/documentation/rankings.png)
-![Repositories](https://github.com/Orange-Management/GitDashboard/img/documentation/repositories.png)
-![Commits](https://github.com/Orange-Management/GitDashboard/img/documentation/commits.png)
+![Statistics](https://raw.githubusercontent.com/Orange-Management/GitDashboard/master/img/documentation/stats.png)
+![Rankings](https://raw.githubusercontent.com/Orange-Management/GitDashboard/master/img/documentation/rankings.png)
+![Repositories](https://raw.githubusercontent.com/Orange-Management/GitDashboard/master/img/documentation/repositories.png)
+![Commits](https://raw.githubusercontent.com/Orange-Management/GitDashboard/master/img/documentation/commits.png)
 
