@@ -1,7 +1,7 @@
 <?php if(!defined('ROOT_PATH')) return; ?>
 <section>
     <?php foreach($lastCommits as $lastCommit) : ?>
-    <div class="w-100">
+    <div class="w-50">
         <table>
             <tbody>
             <tr><th>ID<td><?= $lastCommit->getId(); ?>

@@ -12,7 +12,7 @@
         <tr><th><i class="fa fa-calendar"></i>Last Commit<td><?= current($lastCommits)->getDate()->format('Y-m-d'); ?>
             <th><i class="fa fa-tags"></i>Tags<td><?= $tagsCount; ?>
             <th><i class="fa fa-share-alt"></i>Branches<td><?= $branchesCount; ?>
-        <tr><th><i class="fa fa-files-o"></i>Files<td><?= array_sum($fileCount); ?>
+        <tr><th><i class="fa fa-files-o"></i>Files<td><?= number_format(array_sum($fileCount), 0, '.', ','); ?>
             <th><i class="fa fa-file-text-o"></i>LOC<td><?= number_format(array_sum($loc), 0, '.', ','); ?>
     </table>
 </header>

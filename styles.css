@@ -6,7 +6,7 @@ html, body {
     background: #eaecf0;
     color: #000;
     line-height: 1.3em;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .grad {
@@ -124,6 +124,11 @@ section > div {
 .w-25 {
     flex: none;
     width: 23%;
+}
+
+.w-50 {
+    flex: none;
+    width: 48%;
 }
 
 .w-100 {
