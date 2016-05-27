@@ -35,5 +35,5 @@ $CONFIG = [
         'Scrutinizer Auto-Fixer',
     ],
     'ranking_limit' => 5, // max amount of people showing in the rankings
-    'update_interval' => 60*3 // update interval in seconds
+    'update_interval' => 60*3*3, // update interval in seconds (a multiple of close to 180 is recommended)
 ];

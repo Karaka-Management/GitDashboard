@@ -1,7 +1,7 @@
 <?php if(!defined('ROOT_PATH')) return; ?>
 <header>
     <div id="logo">
-        <img width="100px" src="main.png">
+        <img width="100px" src="img/template/logo.png">
     </div>
     <h1>Git Dashboard</h1>
     <table>
