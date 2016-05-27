@@ -54,6 +54,15 @@ header table {
     vertical-align: middle;
 }
 
+header tbody {
+    float: right;
+    margin-right: 40px;
+}
+
+header th {
+    white-space: nowrap;
+}
+
 #logo {
     display: table-cell;
     vertical-align: middle;
