@@ -1,11 +1,7 @@
-<?php
-if(!defined('ROOT_PATH')) {
-    return;
-}
-?>
+<?php if(!defined('ROOT_PATH')) return; ?>
 <section>
     <?php foreach($repositories as $key => $repository) : ?>
-        <div class="repository">
+        <div class="repository w-25">
             <h2><?= $repository->getName(); ?></h2>
             <div>
                 <table>

@@ -81,30 +81,9 @@ header table {
     100% { left: 0; }
 }
 
-main > section {
-    width: 25%;
-    float: left;
-    display: inline-block;
-}
-
-section > div {
-    background: #fff;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #9d9d9d;
-    width: 20%;
-    display: inline-block;
-}
-
-h2 {
-    border-bottom: 1px solid #9d9d9d;
-    padding: 0;
-    margin: 0 0 10px 0;
-}
-
 main {
     color: #4D4D4D;
-    font-size: 1.3em;
+    font-size: 1.0em;
     line-height: 1.7em;
     position: relative;
     width: 400%;
@@ -113,7 +92,39 @@ main {
     text-align: left;
     animation: 180s slidy infinite;
     overflow: hidden;
-    padding: 0 10px 10px 10px;
+}
+
+main > section {
+    width: 25%;
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+section > div {
+    background: #fff;
+    border: 1px solid #9d9d9d;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    flex: 1 auto;
+}
+
+.w-25 {
+    flex: none;
+    width: 23%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+h2 {
+    border-bottom: 1px solid #9d9d9d;
+    padding: 0;
+    margin: 0 0 10px 0;
 }
 
 td, th {
@@ -141,4 +152,9 @@ header th {
     float: left;
     clear: both;
     box-sizing: border-box;
+}
+
+.fa {
+    width: 20px;
+    margin-right: 5px;
 }

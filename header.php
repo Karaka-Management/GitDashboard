@@ -1,8 +1,4 @@
-<?php
-if(!defined('ROOT_PATH')) {
-    return;
-}
-?>
+<?php if(!defined('ROOT_PATH')) return; ?>
 <header>
     <div id="logo">
         <img width="100px" src="main.png">
@@ -10,11 +6,11 @@ if(!defined('ROOT_PATH')) {
     <h1>Git Dashboard</h1>
     <table>
         <tbody>
-        <tr><th>Repositories<td><?= count($repositories); ?>
-            <th>Contributers<td><?= count($committerRanking); ?>
-            <th>Commits<td><?= array_sum($commits); ?>
-        <tr><th>Last Commit<td><?= current($lastCommits)->getDate()->format('Y-m-d'); ?>
-            <th>Tags<td><?= $tagsCount; ?>
-            <th>Branches<td><?= $branchesCount; ?>
+        <tr><th><i class="fa fa-cubes"></i>Repositories<td><?= count($repositories); ?>
+            <th><i class="fa fa-users"></i>Contributers<td><?= count($committerRanking); ?>
+            <th><i class="fa fa-code"></i>Commits<td><?= array_sum($commits); ?>
+        <tr><th><i class="fa fa-calendar"></i>Last Commit<td><?= current($lastCommits)->getDate()->format('Y-m-d'); ?>
+            <th><i class="fa fa-tags"></i>Tags<td><?= $tagsCount; ?>
+            <th><i class="fa fa-share-alt"></i>Branches<td><?= $branchesCount; ?>
     </table>
 </header>

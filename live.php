@@ -1,21 +1,11 @@
-<?php
-if(!defined('ROOT_PATH')) {
-    return;
-}
-?>
+<?php if(!defined('ROOT_PATH')) return; ?>
 <section>
-    <div>
-        <div class="live-push">
-            <h2>Last commit</h2>
-            <?= $repositories[0]->getNewest()->getAuthor()->getName(); ?>
-            <?= $repositories[0]->getNewest()->getDate()->format('Y-m-d'); ?>
-            <?= $repositories[0]->getNewest()->getMessage(); ?>
-            <?= $repositories[0]->getNewest()->getFiles(); ?>
-        </div>
+    <?php foreach($lastCommits as $lastCommit) : ?>
+    <div class="w-100">
+        <?= $lastCommit->getAuthor()->getName(); ?>
+        <?= $lastCommit->getDate()->format('Y-m-d'); ?>
+        <?= $lastCommit->getMessage(); ?>
+        <?= $lastCommit->getFiles(); ?>
     </div>
-    <div>
-        <div class="live-random-commit">
-
-        </div>
-    </div>
+    <?php endforeach; ?>
 </section>
