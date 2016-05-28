@@ -34,7 +34,7 @@ foreach ($CONFIG['repositories'] as $repository) {
     $commits[$key]      = array_sum($tRepo->getCommitsCount($start));
     $tags[$key]         = $tRepo->getTags();
     $fileCount[$key]    = $tRepo->countFiles();
-    $loc[$key]          = $tRepo->getLOC(['php', 'js', 'scss']);
+    $loc[$key]          = $tRepo->getLOC($CONFIG['source_files']);
 
     $branchesCount += count($branches[$key]);
     $tagsCount += count($tags[$key]);

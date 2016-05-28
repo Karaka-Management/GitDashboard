@@ -24,7 +24,7 @@ define('ROOT_PATH', __DIR__);
 
 $CONFIG = [
     'git_path'        => 'C:/Users/coyle/AppData/Local/GitHub/PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0/cmd/git.exe', // path to the git executable
-    'repositories'    => [ // repository paths (recommended maximum = 12)
+    'repositories'    => [ // repository paths (recommended maximum = 12, depending on screen dimensions)
                            'C:/Users/coyle/Desktop/Orange-Management/phpOMS',
                            'C:/Users/coyle/Desktop/Orange-Management/jsOMS',
                            'C:/Users/coyle/Desktop/Orange-Management/Modules',
@@ -44,4 +44,5 @@ $CONFIG = [
     ],
     'ranking_limit'   => 5, // max amount of people showing in the rankings
     'update_interval' => 60 * 3 * 3, // update interval in seconds (a multiple of close to 180 is recommended)
+    'source_files'    => ['php', 'js', 'scss',], // file extensions containing code
 ];
