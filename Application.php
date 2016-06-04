@@ -44,4 +44,4 @@ foreach ($CONFIG['repositories'] as $repository) {
     }
 }
 
-include 'template.php';
+include 'template/template.php';

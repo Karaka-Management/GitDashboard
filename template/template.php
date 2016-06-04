@@ -16,10 +16,10 @@
 <?php include 'header.php'; ?>
 <div class="grad grad-main"></div>
 <main>
-    <?php include 'stats.php'; ?>
-    <?php include 'ranking.php'; ?>
-    <?php include 'repository.php'; ?>
-    <?php include 'live.php'; ?>
+    <?php include 'pages/stats.php'; ?>
+    <?php include 'pages/ranking.php'; ?>
+    <?php include 'pages/repository.php'; ?>
+    <?php include 'pages/live.php'; ?>
 </main>
 <script>
     jsOMS.ready(function() {
